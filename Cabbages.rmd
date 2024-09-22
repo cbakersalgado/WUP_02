@@ -45,7 +45,7 @@ boxplot(VitC~Cult,data=veggy)
 
 ### Numerical Descriptive Results
 
-The cultivation method c39 has a median of 51.0 while c52 has a median of 64.5. C39 has a mean of 51.5 and c52 has a mean of 64.4. This means that the c52 method was more efficient 
+The cultivation method c39 has a median of 51.0 while c52 has a median of 64.5. C39 has a mean of 51.5 and c52 has a mean of 64.4. This means that the c52 method was more efficient in producing VitC.
 
 favstats(VitC~Cult,data=veggy)
 
@@ -53,11 +53,15 @@ favstats(VitC~Cult,data=veggy)
 
 ## Inferential Results
 
+Based on the sample tests, the p-value is 0.00000003405. Due to this it is possible to reject the null hypothesis because of the unlikely probability of the sample result.
 
+t.test(VitC~Cult,data=veggy)
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 
 # Discussion and Conclusion
+
+Both cultivation methods, c39 and c52, have a numerical difference of VitC produced from the cabbage. The null hypothesis was rejected because of the results from the T test. C39 had the mean of 51.5 while c52 had the mean of 64.5 and our p-value was 0.00000003405. 
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
